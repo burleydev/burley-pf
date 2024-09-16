@@ -1,23 +1,26 @@
 import React from 'react';
-import '../index.css'
+import '../index.css';
 
 const Contact = () => {
-  return (
-<div id='contact' className='h-screen flex flex-col items-center justify-center'>
-  <h3 className='mb-[8rem] text-4xl font-bold text-white'>Contact</h3>
-  <div data-aos='fade-up' className='grid grid-cols-3 gap-[6rem]'>
-    <div className='flex justify-center'>
-      <a className='font-bold text-white text-3xl' href='mailto:c.borrega@proton.me' target='_blank'>Email</a>
-    </div>
-    <div className='flex justify-center'>
-      <a className='font-bold text-white text-3xl' href='https://www.linkedin.com/in/carlosborrega/' target='_blank'>LinkedIn</a>
-    </div>
-    <div className='flex justify-center'>
-      <a className='font-bold text-white text-3xl' href='https://github.com/borregadev' target='_blank'>GitHub</a>
-    </div>
-  </div>
-</div>
+  const links = [
+    { href: 'mailto:c.borrega@proton.me', label: 'Email' },
+    { href: 'https://www.linkedin.com/in/carlosborrega/', label: 'LinkedIn' },
+    { href: 'https://github.com/borregadev', label: 'GitHub' },
+  ];
 
+  return (
+    <div id="contact" className="h-screen flex flex-col items-center justify-center">
+      <h3 className="mb-[8rem] font-bold text-white md:text-4xl xs:text-3xl">Contact</h3>
+      <div data-aos="fade-up" className="grid gap-[6rem] xs:grid-cols-1 md:grid-cols-3">
+        {links.map(({ href, label }) => (
+          <div key={label} className="flex justify-center">
+            <a className="font-bold text-white md:text-3xl xs:text-2xl" href={href} target="_blank" rel="noopener noreferrer">
+              {label}
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
 
