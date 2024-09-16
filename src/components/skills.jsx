@@ -14,16 +14,16 @@ const skills = [
 
 const Skills = () => (
   <div id='skills' className='flex flex-col items-center justify-center h-screen'>
-    <h3 className='mb-12 text-3xl font-bold text-white'>MY SKILLS</h3>
-    <div className='grid grid-cols-4 place-items-center gap-x-[5rem] gap-y-[2rem] my-20' data-aos='fade-up'>
+    <h3 className='mb-[8rem] text-4xl font-bold text-white'>MY SKILLS</h3>
+    <div className='grid grid-cols-4 gap-x-[5rem] gap-y-[3rem]' data-aos='fade-up'>
       {skills.map(skill => (
         <div key={skill.name} className='text-white text-center'>
-          <i className={`fa-brands ${skill.icon} icon text-8xl`}></i>
+          <i className={`fa-brands ${skill.icon} icon text-7xl`}></i>
           <h4 className='text-lg my-2'>{skill.name}</h4>
         </div>
       ))}
       <div className='text-white text-center'>
-        <img src={Typescript} alt='TypeScript' className='h-[5.5rem] w-[5.5rem] my-2 mx-auto' />
+        <img src={Typescript} alt='TypeScript' className='h-[4rem] w-[4rem] mt-1 mx-auto' />
         <h4 className='text-lg my-2'>Typescript</h4>
       </div>
     </div>
