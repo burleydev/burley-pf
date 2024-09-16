@@ -4,15 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-} */
-
 html {
   scroll-behavior: smooth;
 }
@@ -23,12 +14,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #3232a8;
+  background-color: #11151c;
 }
-
-/* section {
-  min-height: 100vh;
-} */
 
 h1, h2, h3, h4, a {
   font-family: "DM Sans", sans-serif;
@@ -37,7 +24,6 @@ h1, h2, h3, h4, a {
 p {
   font-family: "Roboto", sans-serif;
 }
-
 
 button {
   border-radius: 8px;
@@ -48,83 +34,16 @@ button {
   font-family: inherit;
   cursor: pointer;
   transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-
-
-/* Contact */
-
-/* .email::before {
-  content: "Email";
-}
-
-.email:hover::before {
-  content: "c.borrega@proton.me";
-}
-
-.linkedin::before {
-  content: "LinkedIn";
-}
-
-.linkedin:hover::before {
-  content: "carlosborrega";
-}
-
-.github::before {
-  content: "GitHub";
-}
-
-.github:hover::before {
-  content: "borregadev";
-} */
-
-/* a.email::after {
-  content: 'Email';
-}
-
-a.email:hover::after {
-  content: 'c.borrega@proton.me';
-}
-
-a.linkedin::after {
-  content: 'LinkedIn';
-}
-
-a.linkedin:hover::after {
-  content: 'carlosborrega';
-}
-
-a.github::after {
-  content: 'GitHub';
-}
-
-a.github:hover::after {
-  content: 'borregadev';
-}
-
-a {
-  position: relative;
-}
-
-a::after {
-  content: '';
-} */
-
-
-
-button {
-background-color: #3232a8;
-color: #ffffff;
+  background-color: #212d40;
+  color: #ffffff;
 }
 
 button:hover {
-  background-color: #646cff;
+  background-color: #364156;
 }
 
 a:hover {
-  color: #646cff;
+  color: #364156;
 }
 
 button a:hover {

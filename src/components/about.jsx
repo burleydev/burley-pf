@@ -21,7 +21,7 @@ const About = () => (
         </p>
         <button>
           <a href='./assets/docs/carlos-borrega_frontend-developer_resume.pdf' download='carlos-borrega_frontend-developer_resume'>
-            Download my CV <i class="fa-solid fa-circle-check"></i>
+            Download my CV
           </a>
         </button>
       </div>
