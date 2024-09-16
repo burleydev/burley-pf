@@ -5,7 +5,7 @@ const About = () => {
     return (
         <section className="about">
             {/* <img src="./assets/images/profile.png" alt="" /> */}
-            <div class="about-description">
+            <div className="about-description">
                 <p>Hello, I'm Carlos. I am a front-end developer specialising in JavaScript, driven by a passion for
                     constant learning. My background in retail management has honed my communication and
                     teamwork skills, emphasising my creative problem-solving abilities and adaptability to changes.
