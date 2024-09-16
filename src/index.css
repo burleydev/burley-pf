@@ -30,29 +30,14 @@ body {
   min-height: 100vh;
 } */
 
-h1 {
+h1, h2, h3, h4, a {
   font-family: "DM Sans", sans-serif;
-  line-height: 1.1;
-  color: #ffffff;
-}
-
-h2 {
-  font-family: "DM Sans", sans-serif;
-  line-height: 1.1;
-  color: #ffffff;
-}
-
-h3 {
-  font-family: "DM Sans", sans-serif;
-  line-height: 1.1;
-  color: #ffffff;
 }
 
 p {
-  font-family: "DM Sans", sans-serif;
-  line-height: 1.1;
-  color: #ffffff;
+  font-family: "Roboto", sans-serif;
 }
+
 
 button {
   border-radius: 8px;

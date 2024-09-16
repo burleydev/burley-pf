@@ -13,8 +13,8 @@ const skills = [
 ];
 
 const Skills = () => (
-  <div className='flex flex-col items-center justify-center h-screen'>
-    <h3 className='mb-12 text-3xl font-bold'>MY SKILLS</h3>
+  <div id='skills' className='flex flex-col items-center justify-center h-screen'>
+    <h3 className='mb-12 text-3xl font-bold text-white'>MY SKILLS</h3>
     <div className='grid grid-cols-4 place-items-center gap-x-[5rem] gap-y-[2rem] my-20' data-aos='fade-up'>
       {skills.map(skill => (
         <div key={skill.name} className='text-white text-center'>
