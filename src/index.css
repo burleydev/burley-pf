@@ -49,3 +49,24 @@ a:hover {
 button a:hover {
   color: #ffffff;
 }
+
+
+
+@media (min-width: 450px) {
+  .profile img {
+    border-radius: 12px 12px 0 0;
+  }
+  .description {
+    border-radius: 0 0 12px 12px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .profile img {
+    border-radius: 12px 0 0 12px;
+  }
+
+  .description {
+    border-radius: 0 12px 12px 0;
+  }
+}

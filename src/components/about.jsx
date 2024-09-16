@@ -4,11 +4,12 @@ import Profile from '../assets/profile.png';
 
 const About = () => (
 <div id='about' className='h-screen'>
-  <div className='grid grid-cols-5 h-full px-[10rem] py-[5rem]'>
+  <div className='grid h-full px-[10rem] py-[5rem] lg:grid-cols-5 xs:grid-cols-1'>
     <div className='profile col-span-2 flex'>
-      <img src={Profile} alt='Carlos Borrega' className='rounded-l-xl object-cover' />
+    <img src={Profile} alt='Carlos Borrega' className='object-cover' />
+
     </div>
-    <div className='description bg-white p-8 rounded-r-xl col-span-3 flex items-center'>
+    <div className='description bg-white p-8 col-span-3 flex items-center'>
       <div>
         <p className='text-black my-6 text-sm leading-6'>
           Hello, I'm Carlos. I am a front-end developer specializing in JavaScript, driven by a passion for constant learning. My background in retail management has honed my communication and teamwork skills, emphasizing my creative problem-solving abilities and adaptability to changes.
