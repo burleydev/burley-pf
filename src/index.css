@@ -117,15 +117,12 @@ a::after {
 } */
 
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+
+button {
+background-color: #3232a8;
+color: #ffffff;
+}
+
+button:hover {
+  background-color: #646cff;
 }
