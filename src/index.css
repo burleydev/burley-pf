@@ -52,7 +52,7 @@ button a:hover {
 
 
 
-@media (min-width: 450px) {
+@media (min-width: 360px) {
   .profile img {
     border-radius: 12px 12px 0 0;
   }
