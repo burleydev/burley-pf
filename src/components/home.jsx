@@ -3,7 +3,7 @@ import '../index.css';
 
 const Home = () => (
   <div className="flex flex-col items-center justify-center h-screen pb-[5rem]">
-    <h1 className="text-white font-bold my-4 lg:text-7xl md:text-9xl sm:text-7xl xs:text-[2.6rem]" data-aos="fade-up">
+    <h1 className="text-white font-bold my-4 lg:text-8xl md:text-9xl sm:text-7xl xs:text-[2.6rem]" data-aos="fade-up">
       Hello, I'm Carlos
     </h1>
     <h2 className="my-4 text-white lg:text-3xl md:text-4xl sm:text-2xl xs:text-" datlga-aos="fade-up" data-aos-delay="600">
