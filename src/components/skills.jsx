@@ -13,18 +13,18 @@ const skills = [
 ];
 
 const Skills = () => (
-  <div id='skills' className='flex flex-col items-center justify-center h-screen mt-[5rem]'>
-    <h3 className='mb-[8rem] font-bold text-white lg:text-5xl md:text-6xl xs:mt-[9rem] xs:text-3xl'>My Skills</h3>
+  <div id='skills' className='flex flex-col items-center justify-center h-screen xs:mt-[5rem] lg:mt-0'>
+    <h3 className='mb-[8rem] font-bold text-white lg:text-5xl md:text-6xl xs:text-3xl lg:mt-0 xs:mt-[9rem] '>My Skills</h3>
     <div className='grid gap-x-[5rem] gap-y-[3rem] lg:grid-cols-4 xs:grid-cols-2' data-aos='fade-up'>
       {skills.map(skill => (
         <div key={skill.name} className='text-white text-center'>
-          <i className={`fa-brands ${skill.icon} icon lg:text-7xl md:text-9xl xs:text-4xl`}></i>
-          <h4 className='my-3 lg:text-xl md:text-3xl xs:text-md'>{skill.name}</h4>
+          <i className={`fa-brands ${skill.icon} icon lg:text-7xl md:text-6xl xs:text-5xl`}></i>
+          <h4 className='my-3 lg:text-xl md:text-lg xs:text-md'>{skill.name}</h4>
         </div>
       ))}
       <div className='text-white text-center'>
-        <img src={Typescript} alt='TypeScript' className='mt-1 mx-auto lg:h-[4rem] lg:w-[4rem] md:h-[7.5rem] md:w-[7.5rem] xs:h-[2rem] xs:w-[2rem]' />
-        <h4 className='mt-4 lg:text-xl md:text-3xl xs:text-md'>Typescript</h4>
+        <img src={Typescript} alt='TypeScript' className='mt-1 mx-auto lg:h-[4rem] lg:w-[4rem] md:h-[3.3rem] md:w-[3.3rem] xs:h-[2rem] xs:w-[2rem]' />
+        <h4 className='mt-4 lg:text-xl md:text-lg xs:text-md'>Typescript</h4>
       </div>
     </div>
   </div>
