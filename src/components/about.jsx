@@ -18,7 +18,7 @@ const About = () => (
             <p key={idx} className='text-black hyphens-auto my-6 mx-5 lg:text-xl md:text-3xl xs:text-lg'>{text}</p>
           ))}
           <div className='flex justify-center mt-6 lg:justify-end lg:mr-6'>
-            <button className='lg:mr-2 md:p-5 md:my-6 xs:p-4 mb-8'>
+            <button className='lg:mr-2 md:p-5 md:my-6 xs:p-4 mb-6'>
               <a href='./assets/docs/carlos-borrega_frontend-developer_resume.pdf' download='carlos-borrega_frontend-developer_resume' className='lg:text-[1.5rem] md:text-3xl lg:p-0 md:p-8 xs:text-xl'>
                 Download my CV
               </a>
