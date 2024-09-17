@@ -11,7 +11,7 @@ const Contact = () => {
   return (
     <div id="contact" className="h-screen flex flex-col items-center justify-center">
       <h3 className="mb-[8rem] font-bold text-white md:text-4xl xs:text-3xl">Contact</h3>
-      <div data-aos="fade-up" className="grid gap-[6rem] xs:grid-cols-1 md:grid-cols-3">
+      <div data-aos="fade-up" className="grid gap-[6rem] md:grid-cols-1">
         {links.map(({ href, label }) => (
           <div key={label} className="flex justify-center">
             <a className="font-bold text-white md:text-3xl xs:text-2xl" href={href} target="_blank" rel="noopener noreferrer">
