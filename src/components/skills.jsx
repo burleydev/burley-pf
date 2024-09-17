@@ -23,7 +23,7 @@ const Skills = () => (
         </div>
       ))}
       <div className='text-white text-center'>
-        <img src={Typescript} alt='TypeScript' className='mt-1 mx-auto lg:h-[4rem] lg:w-[4rem] md:h-[3.3rem] md:w-[3.3rem] xs:h-[2rem] xs:w-[2rem]' />
+        <img src={Typescript} alt='TypeScript' className='mt-1 mx-auto lg:h-[4rem] lg:w-[4rem] md:h-[3.3rem] md:w-[3.3rem] xs:h-[2.5rem] xs:w-[2.5rem]' />
         <h4 className='mt-4 lg:text-xl md:text-lg xs:text-md'>Typescript</h4>
       </div>
     </div>
