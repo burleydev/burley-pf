@@ -3,7 +3,7 @@ import '../index.css';
 import Profile from '../assets/profile.png';
 
 const About = () => (
-  <div id='about' className='h-auto'>
+  <div id='about' className='h-screen xs:h-auto'>
     <div className='grid h-full md:px-40 sm:py-20 lg:grid-cols-5 xs:grid-cols-1 xs:px-16'>
       <div className='profile col-span-2 flex'>
         <img src={Profile} alt='Carlos Borrega' className='object-cover' />
