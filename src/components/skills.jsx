@@ -24,7 +24,7 @@ const Skills = () => (
       ))}
       <div className='text-white text-center'>
         <img src={Typescript} alt='TypeScript' className='mt-1 mx-auto lg:h-[4rem] lg:w-[4rem] md:h-[7.5rem] md:w-[7.5rem] xs:h-[2rem] xs:w-[2rem]' />
-        <h4 className='mt-4 md:text-3xl xs:text-md'>Typescript</h4>
+        <h4 className='mt-4 lg:text-xl md:text-3xl xs:text-md'>Typescript</h4>
       </div>
     </div>
   </div>
