@@ -54,6 +54,14 @@ button a:hover {
   margin-top: 10px;
 }
 
+.projects {
+  background-color: #364156;
+}
+
+.code {
+  background-color: #212d40;
+}
+
 @media (min-width: 320px) {
   .profile img {
     border-radius: 0;
