@@ -58,8 +58,17 @@ button a:hover {
   background-color: #364156;
 }
 
-.code {
+/* .code {
   background-color: #212d40;
+} */
+
+.code-snippet {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
 }
 
 @media (min-width: 320px) {

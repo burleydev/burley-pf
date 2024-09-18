@@ -16,7 +16,7 @@ const ToggleButton = ({ className }) => {
         {isImage1 ? 'Before' : 'After'}
       </button>
       <img
-        src={isImage1 ? Image1 : Image2}
+        src={isImage1 ? Image2 : Image1}
         alt="Toggle"
         style={{ width: 'auto', height: 'auto' }}
         className="toggle-image rounded-lg"
