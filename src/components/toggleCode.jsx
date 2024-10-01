@@ -1,6 +1,6 @@
 // src/components/ParentComponent.jsx
 import React, { useState } from 'react';
-import Example from './example'; // Import the Example component
+import Example from './example';
 
 const ToggleCode = () => {
   const [isVisible, setIsVisible] = useState(false);

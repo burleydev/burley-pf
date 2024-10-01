@@ -13,7 +13,6 @@ const Example = ({ className }) => {
 
   return (
     <div className={combinedClassNames}>
-      <h1>Code Example</h1>
       <CodeBlock code={codeString} language='javascript'/>
     </div>
   );

@@ -1,4 +1,3 @@
-// src/components/ToggleButton.jsx
 import React, { useState } from 'react';
 import Image1 from '../assets/lpa.png';
 import Image2 from '../assets/lpb.png';
@@ -11,9 +10,9 @@ const ToggleButton = ({ className }) => {
   };
 
   return (
-    <div className={className}>
-      <button onClick={handleToggle} className="toggle-button">
-        {isImage1 ? 'Before' : 'After'}
+    <div className={`grid justify-items-end mt-4 ${className}`}>
+      <button onClick={handleToggle} className="toggle-button mb-4">
+        {isImage1 ? 'After' : 'Before'}
       </button>
       <img
         src={isImage1 ? Image2 : Image1}
