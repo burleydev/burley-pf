@@ -1,4 +1,3 @@
-// src/components/ParentComponent.jsx
 import React, { useState } from 'react';
 import Example from './example';
 

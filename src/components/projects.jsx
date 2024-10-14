@@ -2,9 +2,11 @@ import React from 'react';
 import '../index.css';
 import ToggleProject from './toggleProject.jsx';
 import ToggleCode from './toggleCode.jsx';
+import VideoPlayer from './videoPlayer.jsx';
 
 const Projects = () => (
   <div id='projects' className='flex flex-col items-center justify-center h-auto xs:mt-[5rem] lg:mt-0'>
+    <VideoPlayer src='./src/assets/1080.mp4' />
     <h3 className='mb-[8rem] font-bold text-white lg:text-5xl md:text-6xl xs:text-3xl lg:mt-0 xs:mt-[9rem]'>
       My Projects
     </h3>
@@ -14,7 +16,7 @@ const Projects = () => (
           Project Overview
         </h3>
         <p className='text-white leading-8 mb-[5rem]'>
-          The PolicyCON landing page was developed as the main entry point for a platform that connects policy analysts with subscribers, helping them make informed decisions. The primary goal was to present information in a structured, user-friendly way while showcasing key sections like "Popular Analyst Areas" and "Featured Analysts." Ensuring clarity and engagement was essential to enhance user interaction.
+          The PolicyCON landing page was developed as the main entry point for a platform that connects policy analysts with subscribers, helping them make informed decisions. The primary goal was to present information in a structured, user-friendly way while showcasing key sections like 'Popular Analyst Areas' and 'Featured Analysts.' Ensuring clarity and engagement was essential to enhance user interaction.
         </p>
         <h3 className='pb-8 text-white font-bold text-2xl'>
           Technologies Used
