@@ -3,10 +3,11 @@ import '../index.css';
 import ToggleProject from './toggleProject.jsx';
 import ToggleCode from './toggleCode.jsx';
 import VideoPlayer from './videoPlayer.jsx';
+import Video from '../assets/video.mp4'
 
 const Projects = () => (
   <div id='projects' className='flex flex-col items-center justify-center h-auto xs:mt-[5rem] lg:mt-0'>
-    <VideoPlayer src='video.mp4' />
+    <VideoPlayer src={Video} />
     <h3 className='mb-[8rem] font-bold text-white lg:text-5xl md:text-6xl xs:text-3xl lg:mt-0 xs:mt-[9rem]'>
       My Projects
     </h3>
