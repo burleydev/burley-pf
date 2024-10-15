@@ -6,7 +6,7 @@ import VideoPlayer from './videoPlayer.jsx';
 
 const Projects = () => (
   <div id='projects' className='flex flex-col items-center justify-center h-auto xs:mt-[5rem] lg:mt-0'>
-    <VideoPlayer src='src/assets/video.mp4' />
+    <VideoPlayer src='src\assets\video.mp4' />
     <h3 className='mb-[8rem] font-bold text-white lg:text-5xl md:text-6xl xs:text-3xl lg:mt-0 xs:mt-[9rem]'>
       My Projects
     </h3>
