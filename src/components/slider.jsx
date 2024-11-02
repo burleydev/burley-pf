@@ -14,7 +14,7 @@ const Slider = ({ slides }) => {
   };
 
   return (
-    <div className="relative w-[68rem] h-auto overflow-hidden bg-white p-4 my-10 mx-10 rounded-3xl">
+    <div className="relative lg:w-[68rem] h-auto overflow-hidden bg-white lg:p-4 lg:my-10 lg:mx-10 rounded-3xl xs:p-0 xs:mx-0 xs:m-0 xs:w-screen">
       <div
         className="flex transition-transform duration-500"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
@@ -27,7 +27,7 @@ const Slider = ({ slides }) => {
             <h3 className="text-center text-myBlack font-bold text-2xl">
               {slide.title}
             </h3>
-            <p className="text-myblack leading-8 p-[4rem]">
+            <p className="text-myBlack leading-8 p-[4rem]">
               {slide.description}
             </p>
           </div>

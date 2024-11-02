@@ -50,7 +50,7 @@ const Projects = () => (
       </h3>
     </div>
 
-    <VideoPlayer src={Video} />
+      <VideoPlayer src={Video} />
     <Slider slides={landingPage} />
     <ToggleCode />
 
@@ -64,7 +64,7 @@ const Projects = () => (
     </div>
 
     <VideoPlayer src={Video} />
-    <Slider slides={landingPage} />
+    {/* <Slider slides={landingPage} /> */}
     <ToggleCode />
 
   </div>
