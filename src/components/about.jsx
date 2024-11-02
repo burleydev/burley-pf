@@ -1,6 +1,6 @@
 import React from 'react';
 import '../index.css';
-import Profile from '../assets/profile.jpg';
+import Profile from '../assets/profile.png';
 
 const About = () => (
   <div id='about' className='h-screen xs:h-auto'>

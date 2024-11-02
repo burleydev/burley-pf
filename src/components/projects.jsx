@@ -1,9 +1,12 @@
 import React from 'react';
 import '../index.css';
-import ToggleProject from './toggleProject.jsx';
 import ToggleCode from './toggleCode.jsx';
 import VideoPlayer from './videoPlayer.jsx';
-import Video from '../assets/video.mp4'
+import LandingPageVideo from '../assets/landing_page.mp4'
+import UserProfileVideo from '../assets/user_profile.mp4'
+import QuestionVideo from '../assets/question.mp4'
+import ForumVideo from '../assets/forum.mp4'
+import LoginImage from '../assets/login.png'
 import Slider from './slider.jsx';
 
 const landingPage = [
@@ -41,29 +44,68 @@ const Projects = () => (
       My Projects
     </h3>
 
+    {/* Project 1 */}
     <div className='mb-6'>
-      <h2 className='text-3xl text-myBlack font-bold text-right pb-4'>
+      <h2 className='text-3xl text-myBlack font-black text-center pb-4'>
         PolicyCON Landing Page
       </h2>
       <h3 className='text-myBlack text-center font-bold text-lg mb-10'>
-        React | TypeScript | Tailwind
+        React | Vite | TypeScript | Tailwind CSS
       </h3>
     </div>
-
-    <VideoPlayer src={Video} />
+    <VideoPlayer src={LandingPageVideo} />
     <Slider slides={landingPage} />
     <ToggleCode />
 
+    {/* Project 2 */}
     <div className='mb-6'>
-      <h2 className='text-3xl text-myBlack font-bold text-right pb-4'>
-        PolicyCON Forum
+      <h2 className='text-3xl text-myBlack font-black text-center pb-4'>
+        PolicyCON Forum Login Page
       </h2>
       <h3 className='text-myBlack text-center font-bold text-lg mb-10'>
-        React | TypeScript | Tailwind
+      React | Vite | TypeScript | Tailwind CSS | React Router
       </h3>
     </div>
+    <img src={LoginImage} alt='PolicyCON Forum Login Page' className=' w-[1080px] rounded-3xl shadow-lg' />
+    <Slider slides={landingPage} />
+    <ToggleCode />
 
-    <VideoPlayer src={Video} />
+    {/* Project 3 */}
+    <div className='mb-6'>
+      <h2 className='text-3xl text-myBlack font-black text-center pb-4'>
+        PolicyCON Forum Homepage
+      </h2>
+      <h3 className='text-myBlack text-center font-bold text-lg mb-10'>
+      React | Vite | TypeScript | Tailwind CSS | React Router
+      </h3>
+    </div>
+    <VideoPlayer src={ForumVideo} />
+    <Slider slides={landingPage} />
+    <ToggleCode />
+
+    {/* Project 4 */}
+    <div className='mb-6'>
+      <h2 className='text-3xl text-myBlack font-black text-center pb-4'>
+        PolicyCON Forum "Add Your Question"
+      </h2>
+      <h3 className='text-myBlack text-center font-bold text-lg mb-10'>
+      React | Vite | TypeScript | Tailwind CSS | React Router
+      </h3>
+    </div>
+    <VideoPlayer src={QuestionVideo} />
+    <Slider slides={landingPage} />
+    <ToggleCode />
+
+    {/* Project 5 */}
+    <div className='mb-6'>
+      <h2 className='text-3xl text-myBlack font-black text-center pb-4'>
+        PolicyCON Forum User Profile
+      </h2>
+      <h3 className='text-myBlack text-center font-bold text-lg mb-10'>
+      React | Vite | TypeScript | Tailwind CSS | React Router | Recharts
+      </h3>
+    </div>
+    <VideoPlayer src={UserProfileVideo} />
     <Slider slides={landingPage} />
     <ToggleCode />
 
