@@ -14,10 +14,16 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #11151c;
+  /* background-color: #11151c; */
+  background: rgb(245,246,251);
+  background: linear-gradient(135deg, rgba(245,246,251,1) 0%, rgba(214,226,252,1) 100%);
 }
 
-h1, h2, h3, h4, a {
+h1,
+h2,
+h3,
+h4,
+a {
   font-family: "DM Sans", sans-serif;
 }
 
@@ -25,26 +31,27 @@ p {
   font-family: "Roboto", sans-serif;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  cursor: pointer;
-  transition: border-color 0.25s;
-  background-color: #212d40;
-  color: #ffffff;
+.download {
+  color: rgb(156,139,241);
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(156,139,241);
 }
 
-button:hover {
-  background-color: #364156;
+
+.download:hover {
+  background: rgb(156,139,241);
+  background: linear-gradient(90deg, rgba(156,139,241,1) 0%, rgba(131,164,241,1) 100%);
+  color:white;
+  border-color:white;
 }
 
-a:hover {
+
+
+
+/* a:hover {
   color: #364156;
-}
+} */
 
 button a:hover {
   color: #ffffff;
@@ -82,19 +89,19 @@ button a:hover {
 
 @media (min-width: 768px) {
   .profile img {
-    border-radius: 12px 12px 0 0;
+    border-radius: 24px 24px 0 0;
   }
   .description {
-    border-radius: 0 0 12px 12px;
+    border-radius: 0 0 24px 24px;
   }
 }
 
 @media (min-width: 1024px) {
   .profile img {
-    border-radius: 12px 0 0 12px;
+    border-radius: 24px 0 0 24px;
   }
 
   .description {
-    border-radius: 0 12px 12px 0;
+    border-radius: 0 24px 24px 0;
   }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../index.css';
-import Profile from '../assets/profile.png';
+import Profile from '../assets/profile.jpg';
 
 const About = () => (
   <div id='about' className='h-screen xs:h-auto'>
@@ -8,18 +8,17 @@ const About = () => (
       <div className='profile col-span-2 flex'>
         <img src={Profile} alt='Carlos Borrega' className='object-cover' />
       </div>
-      <div className='description bg-white p-8 col-span-3 flex items-center xs:px-2'>
+      <div className='description bg-white p-8 col-span-3 flex items-center xs:px-2 sm:px-8'>
         <div className='w-full'>
           {[
-            "Hello, I'm Carlos. I am a front-end developer specializing in JavaScript, driven by a passion for constant learning. My background in retail management has honed my communication and teamwork skills, emphasizing my creative problem-solving abilities and adaptability to changes.",
-            "I graduated from an extensive coding bootcamp by edX and earned a certificate in front-end web development. Throughout the four-month program, I successfully balanced my coursework with work commitments, showcasing both quick learning abilities and a strong commitment to continuous improvement.",
-            "Detail-oriented and highly motivated, I derive satisfaction from coding efficient and responsive websites. I am eager to contribute my diverse skill set to dynamic development projects, demonstrating an unwavering commitment to excellence."
+            'Hi, I’m Carlos, a UX/UI Designer and Frontend Engineer with a strong foundation in web development. I hold a bootcamp certificate in Frontend Web Development and I have refined my skills at PolicyCON, a dynamic startup where I’ve contributed to various projects as part of the frontend team.',
+            'My expertise lies in React, though I’m always excited to learn new technologies, including Python, which I’ve been diving into recently. I pride myself on being efficient, clear in communication, and detail-oriented in planning. I’m constantly seeking opportunities to grow, and I thrive in the tech world as I work towards becoming a better programmer every day.'
           ].map((text, idx) => (
-            <p key={idx} className='text-black hyphens-auto my-6 mx-5 lg:text-xl md:text-3xl xs:text-lg'>{text}</p>
+            <p key={idx} className='text-black text-justify my-6 mx-5 xs:text-lg lg:my-10'>{text}</p>
           ))}
-          <div className='flex justify-center mt-6 lg:justify-end lg:mr-6'>
-            <button className='lg:mr-2 md:p-5 md:my-6 xs:p-4 mt-6 mb-7'>
-              <a href='./assets/docs/carlos-borrega_frontend-developer_resume.pdf' download='carlos-borrega_frontend-developer_resume' className='lg:text-[1.5rem] md:text-3xl lg:p-0 md:p-8 xs:text-xl'>
+          <div className='flex justify-center mt-6 lg:justify-end lg:place-items-start lg:mr-5'>
+            <button className='download px-6 py-3 my-2 rounded-full text-white font-semibold'>
+              <a href='./assets/docs/carlos-borrega_frontend-developer_resume.pdf' download='carlos-borrega_frontend-developer_resume' className='text-xl'>
                 Download my CV
               </a>
             </button>

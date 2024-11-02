@@ -34,6 +34,7 @@ const VideoPlayer = ({ src, width = "1080px", height = "608px" }) => {
         onClick={togglePlay} // Click on video to play/pause
         controls={false}    // Hides default controls
         style={{ cursor: 'pointer' }} // Optional: Change cursor style to indicate clickable
+        className='rounded-3xl'
       >
         <source src={src} type="video/mp4" />
         Your browser does not support the video tag.

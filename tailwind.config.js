@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        'myBlack': '#201f2d',
+        'myGrey': '#4b4b52'
+      },
       screens: {
         xs: '320px',
       },
