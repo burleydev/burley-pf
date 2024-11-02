@@ -15,7 +15,7 @@ const landingPage = [
   {
     title: "Technologies Used",
     description:
-      "Languages: React, TypeScript\nStyling: Tailwind CSS\nDesign & Prototyping: Figma\nVersion Control: Git, GitHub\nDesign & User Experience (UX): The design process started with Figma, where we mapped out the layout to ensure a clean and intuitive user experience. The main objective was to highlight important areas, such as Popular Analyst Areas and Featured Analysts, without overwhelming the user. Additionally, the page was built with responsive design in mind, making it adaptable to smaller screens like phones and tablets, ensuring the platform is accessible across all devices.",
+      "I built the PolicyCON landing page using React and TypeScript to create a robust and interactive interface. Tailwind CSS allowed me to design a clean, responsive layout that adapts smoothly across all devices. Starting in Figma, I planned a user-friendly layout that highlights clarity and engagement. For version control, I relied on Git and GitHub, ensuring efficient collaboration and seamless updates. Throughout the process, I focused on user-centered design, making sure each element contributed to an intuitive and enjoyable experience.",
   },
   {
     title: "Development Process",
@@ -25,7 +25,7 @@ const landingPage = [
   {
     title: "Mobile Responsiveness",
     description:
-      "We focused on making the landing page fully responsive. This involved adapting the layout to mobile and tablet screen sizes, ensuring that the user experience remained seamless and intuitive, regardless of the device.",
+      "I focused on making the landing page fully responsive, carefully adapting the layout to work seamlessly on mobile and tablet screen sizes. This process involved optimising each element to maintain a smooth, intuitive experience regardless of the device. My goal was to ensure that users could interact effortlessly with the page, whether they were viewing it on a large desktop monitor or a smaller mobile screen, preserving both functionality and visual appeal across all platforms.",
   },
   {
     title: "Outcomes & Learnings",
@@ -50,21 +50,21 @@ const Projects = () => (
       </h3>
     </div>
 
-      <VideoPlayer src={Video} />
+    <VideoPlayer src={Video} />
     <Slider slides={landingPage} />
     <ToggleCode />
 
     <div className='mb-6'>
-      <h2 className='text-3xl text-white font-bold text-right pb-4'>
-        PolicyCON Landing Page
+      <h2 className='text-3xl text-myBlack font-bold text-right pb-4'>
+        PolicyCON Forum
       </h2>
-      <h3 className='text-white text-center font-bold text-lg mb-10'>
+      <h3 className='text-myBlack text-center font-bold text-lg mb-10'>
         React | TypeScript | Tailwind
       </h3>
     </div>
 
     <VideoPlayer src={Video} />
-    {/* <Slider slides={landingPage} /> */}
+    <Slider slides={landingPage} />
     <ToggleCode />
 
   </div>

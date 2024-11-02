@@ -10,7 +10,7 @@ const ToggleCode = () => {
 
   return (
     <div className='code-snippet mb-40'>
-      <button onClick={toggleVisibility} className='mb-4 px-4 py-2 text-white rounded-md w-48'>
+      <button onClick={toggleVisibility} className='mb-4 px-4 py-2 text-white bg-myBlack rounded-md w-[12rem]'>
         {isVisible ? 'Hide Code Example' : 'Show Code Example'}
       </button>
 

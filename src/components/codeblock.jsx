@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import Prism from 'prismjs';
-import 'prismjs/themes/prism-tomorrow.css'; // Ensure this path is correct
+import 'prismjs/themes/prism.css'; // Ensure this path is correct
 import classNames from 'classnames'; // Import classnames
 
 // Import language definitions
@@ -20,7 +20,7 @@ const CodeBlock = ({ code, language }) => {
   const codeClass = classNames(`language-${language}`);
 
   return (
-    <pre className=''>
+    <pre className='rounded-3xl shadow-lg'>
       <code ref={ref} className={codeClass}>
         {code}
       </code>

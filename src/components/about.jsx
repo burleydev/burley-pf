@@ -6,9 +6,9 @@ const About = () => (
   <div id='about' className='h-screen xs:h-auto'>
     <div className='grid h-full md:px-40 sm:py-20 lg:grid-cols-5 xs:grid-cols-1 xs:px-0'>
       <div className='profile col-span-2 flex'>
-        <img src={Profile} alt='Carlos Borrega' className='object-cover' />
+        <img src={Profile} alt='Carlos Borrega' className='object-cover shadow-lg' />
       </div>
-      <div className='description bg-white p-8 col-span-3 flex items-center xs:px-2 sm:px-8'>
+      <div className='description bg-white p-8 col-span-3 flex items-center xs:px-2 sm:px-8 shadow-lg'>
         <div className='w-full'>
           {[
             'Hi, I’m Carlos, a UX/UI Designer and Frontend Engineer with a strong foundation in web development. I hold a bootcamp certificate in Frontend Web Development and I have refined my skills at PolicyCON, a dynamic startup where I’ve contributed to various projects as part of the frontend team.',

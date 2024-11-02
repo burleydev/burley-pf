@@ -9,7 +9,7 @@ const Contact = () => {
   ];
 
   return (
-    <div id="contact" className="h-screen flex flex-col items-center justify-center xs:mt-[5rem] md:mt-[12rem] lg:mt-0">
+    <div id="contact" className="h-[30rem] flex flex-col items-center justify-center xs:mt-[5rem] md:mt-[12rem] lg:mt-0">
       <h3 className="mb-[8rem] font-bold text-myBlack lg:text-5xl md:text-6xl xs:text-3xl">Contact</h3>
       <div data-aos="fade-up" className="grid gap-[6rem] lg:grid-cols-3 md:grid-cols-1">
         {links.map(({ href, label }) => (

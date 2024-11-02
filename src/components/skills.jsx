@@ -19,12 +19,12 @@ const Skills = () => (
       {skills.map(skill => (
         <div key={skill.name} className='text-myBlack text-center'>
           <i className={`fa-brands ${skill.icon} icon lg:text-7xl md:text-6xl xs:text-5xl`}></i>
-          <h4 className='my-3 lg:text-xl md:text-lg xs:text-md font-semibold'>{skill.name}</h4>
+          <h4 className='my-3 lg:text-xl md:text-lg xs:text-md'>{skill.name}</h4>
         </div>
       ))}
       <div className='text-my text-center'>
         <img src={Typescript} alt='TypeScript' className='mt-1 mx-auto lg:h-[4rem] lg:w-[4rem] md:h-[3.3rem] md:w-[3.3rem] xs:h-[2.5rem] xs:w-[2.5rem]' />
-        <h4 className='mt-4 lg:text-xl md:text-lg xs:text-md font-semibold'>TypeScript</h4>
+        <h4 className='mt-4 lg:text-xl md:text-lg xs:text-md'>TypeScript</h4>
       </div>
     </div>
   </div>

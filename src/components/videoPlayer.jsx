@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 
-const VideoPlayer = ({ src, maxWidth = "1080px", aspectRatio = "16/9" }) => {
+const VideoPlayer = ({ src, width = "1080px", height = "608px" }) => {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -23,23 +23,18 @@ const VideoPlayer = ({ src, maxWidth = "1080px", aspectRatio = "16/9" }) => {
   };
 
   return (
-    <div
-      style={{
-        maxWidth,           // Limit maximum width for larger screens
-        width: '100%',      // Make it full-width for smaller screens
-        aspectRatio,        // Set aspect ratio to maintain proportions
-        position: 'relative',
-      }}
-      className="mx-auto"  // Center the video horizontally
-    >
+    <div style={{ width, height }}>
       <video
         ref={videoRef}
+        width={width}
+        height={height}
         autoPlay
         muted
         loop
-        onClick={togglePlay}  // Click to play/pause
-        controls={false}      // Hide default controls
-        className="rounded-3xl w-full h-full object-cover cursor-pointer" // Responsive width and cursor
+        onClick={togglePlay} // Click on video to play/pause
+        controls={false}    // Hides default controls
+        style={{ cursor: 'pointer' }} // Optional: Change cursor style to indicate clickable
+        className='rounded-3xl shadow-lg'
       >
         <source src={src} type="video/mp4" />
         Your browser does not support the video tag.
@@ -49,4 +44,3 @@ const VideoPlayer = ({ src, maxWidth = "1080px", aspectRatio = "16/9" }) => {
 };
 
 export default VideoPlayer;
-
