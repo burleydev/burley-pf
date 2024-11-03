@@ -3,7 +3,7 @@ import '../index.css'
 
 const Navbar = () => {
   return (
-    <div className='grid grid-cols-4 text-center text-myBlack font-bold mt-[3rem] mx-[5%] lg:text-lg md:text-2xl sm:text-lg xs:text-sm'>
+    <div className='grid grid-cols-4 text-center text-myBlack font-bold mt-[3rem] mx-[5%] lg:text-lg md:text-2xl sm:text-lg xs:text-sm hover:text-myGrey'>
     <a href='#about'>About</a>
     <a href='#skills'>Skills</a>
     <a href='#projects'>Projects</a>

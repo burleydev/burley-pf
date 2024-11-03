@@ -3,6 +3,7 @@ import React, { useRef, useState, useEffect } from 'react';
 const VideoPlayer = ({ src, width = "1080px", height = "608px" }) => {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [showControls, setShowControls] = useState(false);
 
   useEffect(() => {
     if (videoRef.current) {
@@ -23,7 +24,11 @@ const VideoPlayer = ({ src, width = "1080px", height = "608px" }) => {
   };
 
   return (
-    <div style={{ width, height }}>
+    <div
+      style={{ width, height }}
+      onMouseEnter={() => setShowControls(true)}
+      onMouseLeave={() => setShowControls(false)}
+    >
       <video
         ref={videoRef}
         width={width}
@@ -32,9 +37,9 @@ const VideoPlayer = ({ src, width = "1080px", height = "608px" }) => {
         muted
         loop
         onClick={togglePlay} // Click on video to play/pause
-        controls={false}    // Hides default controls
-        style={{ cursor: 'pointer' }} // Optional: Change cursor style to indicate clickable
-        className='rounded-3xl shadow-lg'
+        controls={showControls}    // Controls visible on hover
+        style={{ cursor: 'pointer' }}
+        className="rounded-3xl shadow-lg"
       >
         <source src={src} type="video/mp4" />
         Your browser does not support the video tag.

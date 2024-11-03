@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import Prism from 'prismjs';
-import 'prismjs/themes/prism.css'; // Ensure this path is correct
+import 'prismjs/themes/prism.css'; // Make sure this is the correct theme
 import classNames from 'classnames'; // Import classnames
 
 // Import language definitions
@@ -12,7 +12,7 @@ const CodeBlock = ({ code, language }) => {
 
   useEffect(() => {
     if (ref.current) {
-      // Ensure Prism.highlightElement is called after the component has rendered
+      // Highlight the code block
       Prism.highlightElement(ref.current);
     }
   }, [code, language]); // Re-run the effect when code or language changes
