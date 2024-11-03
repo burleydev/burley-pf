@@ -9,7 +9,7 @@ import ForumVideo from '../assets/forum.mp4'
 import LoginImage from '../assets/login.png'
 import Slider from './slider.jsx';
 import LandingPageSnippet from './snippets/landingPageSnippet'
-import HomePageSnippet from './snippets/homepageSnippet'
+import HomePageSnippet from './snippets/homepageSnippet.jsx'
 import QuestionSnippet from './snippets/questionSnippet'
 import LoginSnippet from './snippets/loginSnippet'
 import UserSnippet from './snippets/userSnippet'
