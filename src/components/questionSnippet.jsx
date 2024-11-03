@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import CodeBlock from '../CodeBlock'; // Ensure this import is correct
+import CodeBlock from './CodeBlock'; // Ensure this import is correct
 
 const QuestionSnippet = ({ className }) => {
   const codeString = `
