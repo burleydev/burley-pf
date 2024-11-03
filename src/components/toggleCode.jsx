@@ -9,7 +9,7 @@ const ToggleCode = ({ SnippetComponent }) => { // Accept SnippetComponent as a p
 
   return (
     <div className='code-snippet mb-40'>
-      <button onClick={toggleVisibility} className='mb-4 px-4 py-2 text-white bg-myBlack rounded-md w-[12rem]'>
+      <button onClick={toggleVisibility} className='mb-4 px-4 py-2 text-white bg-myBlack rounded-lg w-[12rem]'>
         {isVisible ? 'Hide Code Snippet' : 'Show Code Snippet'}
       </button>
 

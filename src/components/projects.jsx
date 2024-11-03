@@ -8,7 +8,11 @@ import QuestionVideo from '../assets/question.mp4'
 import ForumVideo from '../assets/forum.mp4'
 import LoginImage from '../assets/login.png'
 import Slider from './slider.jsx';
-import LandingPageSnippet from './landingPageSnippet.jsx' 
+import LandingPageSnippet from './snippets/landingPageSnippet'
+import HomePageSnippet from './snippets/homepageSnippet'
+import QuestionSnippet from './snippets/questionSnippet'
+import LoginSnippet from './snippets/loginSnippet'
+import UserSnippet from './snippets/userSnippet'
 
 const landingPage = [
   {
@@ -173,12 +177,12 @@ const Projects = () => (
         PolicyCON Forum Login Page
       </h2>
       <h3 className='text-myGrey text-center font-bold text-lg mb-10'>
-      React | Vite | TypeScript | Tailwind CSS | React Router
+        React | Vite | TypeScript | Tailwind CSS | React Router
       </h3>
     </div>
     <img src={LoginImage} alt='PolicyCON Forum Login Page' className=' w-[1080px] rounded-3xl shadow-lg' />
     <Slider slides={loginPage} />
-    <ToggleCode />
+    <ToggleCode SnippetComponent={LoginSnippet} />
 
     {/* Project 3 */}
     <div className='mb-6'>
@@ -186,12 +190,12 @@ const Projects = () => (
         PolicyCON Forum Homepage
       </h2>
       <h3 className='text-myGrey text-center font-bold text-lg mb-10'>
-      React | Vite | TypeScript | Tailwind CSS | React Router
+        React | Vite | TypeScript | Tailwind CSS | React Router
       </h3>
     </div>
     <VideoPlayer src={ForumVideo} />
     <Slider slides={forumHomepage} />
-    <ToggleCode />
+    <ToggleCode SnippetComponent={HomePageSnippet} />
 
     {/* Project 4 */}
     <div className='mb-6'>
@@ -199,12 +203,12 @@ const Projects = () => (
         PolicyCON Forum "Add Your Question"
       </h2>
       <h3 className='text-myGrey text-center font-bold text-lg mb-10'>
-      React | Vite | TypeScript | Tailwind CSS | React Router
+        React | Vite | TypeScript | Tailwind CSS | React Router
       </h3>
     </div>
     <VideoPlayer src={QuestionVideo} />
     <Slider slides={questionPage} />
-    <ToggleCode />
+    <ToggleCode SnippetComponent={QuestionSnippet} />
 
     {/* Project 5 */}
     <div className='mb-6'>
@@ -212,12 +216,12 @@ const Projects = () => (
         PolicyCON Forum User Profile
       </h2>
       <h3 className='text-myGrey text-center font-bold text-lg mb-10'>
-      React | Vite | TypeScript | Tailwind CSS | React Router | Recharts
+        React | Vite | TypeScript | Tailwind CSS | React Router | Recharts
       </h3>
     </div>
     <VideoPlayer src={UserProfileVideo} />
     <Slider slides={userProfilePage} />
-    <ToggleCode />
+    <ToggleCode SnippetComponent={UserSnippet} />
 
   </div>
 );
