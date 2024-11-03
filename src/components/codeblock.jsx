@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import Prism from 'prismjs';
-import 'prismjs/themes/prism.css'; // Make sure this is the correct theme
+import 'prismjs/themes/prism-coy.css'; // Ensure this is the correct theme
 import classNames from 'classnames'; // Import classnames
+import PropTypes from 'prop-types'; // Import PropTypes
 
 // Import language definitions
 import 'prismjs/components/prism-javascript';
@@ -26,6 +27,12 @@ const CodeBlock = ({ code, language }) => {
       </code>
     </pre>
   );
+};
+
+// Add PropTypes for type checking
+CodeBlock.propTypes = {
+  code: PropTypes.string.isRequired,
+  language: PropTypes.string.isRequired,
 };
 
 export default CodeBlock;
