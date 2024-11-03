@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import Prism from 'prismjs';
-import 'prismjs/themes/prism-coy.css'; // Make sure this is the correct theme
+import 'prismjs/themes/prism.css'; // Make sure this is the correct theme
 import classNames from 'classnames'; // Import classnames
 
 // Import language definitions
