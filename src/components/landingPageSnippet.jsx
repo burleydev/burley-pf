@@ -1,10 +1,10 @@
 import React from 'react';
 import classNames from 'classnames';
-import CodeBlock from './CodeBlock.jsx'; // Ensure this import is correct
+import CodeBlock from './codeblock';
 
 const LandingPageSnippet = ({ className }) => {
   const codeString = `
-    const greeting = 'Hello, you!';
+    const greeting = 'Hello, Carlos!';
     console.log(greeting);
   `;
 
