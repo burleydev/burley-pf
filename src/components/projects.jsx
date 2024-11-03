@@ -8,11 +8,11 @@ import QuestionVideo from '../assets/question.mp4'
 import ForumVideo from '../assets/forum.mp4'
 import LoginImage from '../assets/login.png'
 import Slider from './slider.jsx';
-import LandingPageSnippet from './snippets/landingPageSnippet'
+import LandingPageSnippet from './snippets/landingPageSnippet.jsx'
 import HomePageSnippet from './snippets/homepageSnippet.jsx'
-import QuestionSnippet from './snippets/questionSnippet'
-import LoginSnippet from './snippets/loginSnippet'
-import UserSnippet from './snippets/userSnippet'
+import QuestionSnippet from './snippets/questionSnippet.jsx'
+import LoginSnippet from './snippets/loginSnippet.jsx'
+import UserSnippet from './snippets/userSnippet.jsx'
 
 const landingPage = [
   {
