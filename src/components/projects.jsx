@@ -182,7 +182,7 @@ const Projects = () => (
     </div>
     <img src={LoginImage} alt='PolicyCON Forum Login Page' className=' w-[1080px] rounded-3xl shadow-lg' />
     <Slider slides={loginPage} />
-    <ToggleCode SnippetComponent={LoginSnippet} />
+    {/* <ToggleCode SnippetComponent={LoginSnippet} /> */}
 
     {/* Project 3 */}
     <div className='mb-6'>
@@ -195,7 +195,7 @@ const Projects = () => (
     </div>
     <VideoPlayer src={ForumVideo} />
     <Slider slides={forumHomepage} />
-    <ToggleCode SnippetComponent={HomePageSnippet} />
+    {/* <ToggleCode SnippetComponent={HomePageSnippet} /> */}
 
     {/* Project 4 */}
     <div className='mb-6'>
@@ -208,7 +208,7 @@ const Projects = () => (
     </div>
     <VideoPlayer src={QuestionVideo} />
     <Slider slides={questionPage} />
-    <ToggleCode SnippetComponent={QuestionSnippet} />
+    {/* <ToggleCode SnippetComponent={QuestionSnippet} /> */}
 
     {/* Project 5 */}
     <div className='mb-6'>
@@ -221,7 +221,7 @@ const Projects = () => (
     </div>
     <VideoPlayer src={UserProfileVideo} />
     <Slider slides={userProfilePage} />
-    <ToggleCode SnippetComponent={UserSnippet} />
+    {/* <ToggleCode SnippetComponent={UserSnippet} /> */}
 
   </div>
 );

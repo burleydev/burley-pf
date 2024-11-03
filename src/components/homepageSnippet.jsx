@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types'; // Import PropTypes
-import CodeBlock from './CodeBlock'; // Ensure this import is correct
+import CodeBlock from './CodeBlock.jsx'; // Ensure this import is correct
 
 const HomePageSnippet = ({ className }) => {
   const codeString = `const greeting = 'Hello, Pikachu!';\nconsole.log(greeting);`; // Maintain formatting
