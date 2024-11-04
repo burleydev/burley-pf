@@ -1,35 +1,29 @@
 import React, { useEffect, useRef } from 'react';
-import Prism from 'prismjs';
-import 'prismjs/themes/prism-coy.css'; // Ensure this is the correct theme
-import classNames from 'classnames'; // Import classnames
-import PropTypes from 'prop-types'; // Import PropTypes
+import hljs from 'highlight.js';
+import 'highlight.js/styles/base16/sagelight.css';
 
-// Import language definitions
-import 'prismjs/components/prism-javascript';
-import 'prismjs/components/prism-typescript';
+import 'highlight.js/lib/languages/javascript';
+import 'highlight.js/lib/languages/typescript';
+import PropTypes from 'prop-types';
 
 const CodeBlock = ({ code, language }) => {
-  const ref = useRef(null);
+  const codeRef = useRef(null);
 
   useEffect(() => {
-    if (ref.current) {
-      // Highlight the code block
-      Prism.highlightElement(ref.current);
+    if (codeRef.current) {
+      hljs.highlightElement(codeRef.current); // Highlight the code block
     }
-  }, [code, language]); // Re-run the effect when code or language changes
-
-  const codeClass = classNames(`language-${language}`);
+  }, [code, language]); // Re-run if code or language changes
 
   return (
-    <pre className='rounded-3xl shadow-lg'>
-      <code ref={ref} className={codeClass}>
+    <pre className='shadow-lg rounded-3xl'>
+      <code ref={codeRef} className={`language-${language}`}>
         {code}
       </code>
     </pre>
   );
 };
 
-// Add PropTypes for type checking
 CodeBlock.propTypes = {
   code: PropTypes.string.isRequired,
   language: PropTypes.string.isRequired,

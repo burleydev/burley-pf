@@ -14,7 +14,6 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  /* background-color: #11151c; */
   background: rgb(245,246,251);
   background: linear-gradient(135deg, rgba(245,246,251,1) 0%, rgba(214,226,252,1) 100%);
 }
@@ -57,16 +56,12 @@ button a:hover {
   color: #ffffff;
 }
 
-.arrow {
+/* .arrow {
   margin-top: 10px;
-}
+} */
 
-.projects {
+/* .projects {
   background-color: #364156;
-}
-
-/* .code {
-  background-color: #212d40;
 } */
 
 .code-snippet {

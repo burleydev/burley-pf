@@ -9,7 +9,7 @@ const ToggleCode = ({ SnippetComponent }) => { // Accept SnippetComponent as a p
   };
 
   return (
-    <div className='code-snippet mb-40'>
+    <div className='code-snippet mb-32'>
       <button 
         onClick={toggleVisibility} 
         className='mb-4 px-4 py-2 text-white bg-myBlack rounded-lg w-[12rem]' 
