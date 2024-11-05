@@ -160,10 +160,10 @@ const Projects = () => (
 
     {/* Project 1 */}
     <div className='mb-6'>
-      <h2 className='text-3xl text-myBlack font-black text-center pb-4'>
+      <h2 className='text-myBlack font-black text-center pb-4 xs:text-xl lg:text-3xl'>
         PolicyCON Landing Page
       </h2>
-      <h3 className='text-myGrey text-center font-bold text-lg mb-10'>
+      <h3 className='text-myGrey text-center font-bold mb-10 xs:text-sm lg:text-lg'>
         React | Vite | TypeScript | Tailwind CSS
       </h3>
     </div>
@@ -173,23 +173,23 @@ const Projects = () => (
 
     {/* Project 2 */}
     <div className='mb-6'>
-      <h2 className='text-3xl text-myBlack font-black text-center pb-4'>
+      <h2 className='text-myBlack font-black text-center pb-4 xs:text-xl lg:text-3xl'>
         PolicyCON Forum Login Page
       </h2>
-      <h3 className='text-myGrey text-center font-bold text-lg mb-10'>
+      <h3 className='text-myGrey text-center font-bold mb-10 xs:text-sm lg:text-lg xs:px-8'>
         React | Vite | TypeScript | Tailwind CSS | React Router
       </h3>
     </div>
-    <img src={LoginImage} alt='PolicyCON Forum Login Page' className=' w-[1080px] rounded-3xl shadow-lg' />
+    <img src={LoginImage} alt='PolicyCON Forum Login Page' className=' w-[1080px] shadow-lg xs:rounded-none lg:rounded-3xl ' />
     <Slider slides={loginPage} />
     <ToggleCode SnippetComponent={LoginSnippet} />
 
     {/* Project 3 */}
     <div className='mb-6'>
-      <h2 className='text-3xl text-myBlack font-black text-center pb-4'>
+    <h2 className='text-myBlack font-black text-center pb-4 xs:text-xl lg:text-3xl'>
         PolicyCON Forum Homepage
       </h2>
-      <h3 className='text-myGrey text-center font-bold text-lg mb-10'>
+      <h3 className='text-myGrey text-center font-bold mb-10 xs:text-sm lg:text-lg xs:px-8'>
         React | Vite | TypeScript | Tailwind CSS | React Router
       </h3>
     </div>
@@ -199,10 +199,10 @@ const Projects = () => (
 
     {/* Project 4 */}
     <div className='mb-6'>
-      <h2 className='text-3xl text-myBlack font-black text-center pb-4'>
+    <h2 className='text-myBlack font-black text-center pb-4 xs:text-xl lg:text-3xl xs:px-[5rem]'>
         PolicyCON Forum "Add Your Question"
       </h2>
-      <h3 className='text-myGrey text-center font-bold text-lg mb-10'>
+      <h3 className='text-myGrey text-center font-bold mb-10 xs:text-sm lg:text-lg xs:px-8'>
         React | Vite | TypeScript | Tailwind CSS | React Router
       </h3>
     </div>
@@ -212,10 +212,10 @@ const Projects = () => (
 
     {/* Project 5 */}
     <div className='mb-6'>
-      <h2 className='text-3xl text-myBlack font-black text-center pb-4'>
+    <h2 className='text-myBlack font-black text-center pb-4 xs:text-xl lg:text-3xl'>
         PolicyCON Forum User Profile
       </h2>
-      <h3 className='text-myGrey text-center font-bold text-lg mb-10'>
+      <h3 className='text-myGrey text-center font-bold mb-10 xs:text-sm lg:text-lg xs:px-8'>
         React | Vite | TypeScript | Tailwind CSS | React Router | Recharts
       </h3>
     </div>

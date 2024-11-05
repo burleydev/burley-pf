@@ -14,11 +14,11 @@ const About = () => (
             'Hi, I’m Carlos, a UX/UI Designer and Frontend Engineer with a strong foundation in web development. I hold a bootcamp certificate in Frontend Web Development and I have refined my skills at PolicyCON, a dynamic startup where I’ve contributed to various projects as part of the frontend team.',
             'My expertise lies in React, though I’m always excited to learn new technologies, including Python, which I’ve been diving into recently. I pride myself on being efficient, clear in communication, and detail-oriented in planning. I’m constantly seeking opportunities to grow, and I thrive in the tech world as I work towards becoming a better programmer every day.'
           ].map((text, idx) => (
-            <p key={idx} className='text-myBlack text-justify my-6 mx-5 xs:text-lg lg:my-10'>{text}</p>
+            <p key={idx} className='text-myBlack text-justify my-6 mx-5 xs:text-sm xs:leading-7 lg:text-lg lg:my-10'>{text}</p>
           ))}
           <div className='flex justify-center mt-6 lg:justify-end lg:place-items-start lg:mr-5'>
             <button className='mt-4 p-4 text-white bg-myBlack rounded-lg font-bold hover:bg-myGrey'>
-              <a href='./assets/docs/carlos-borrega_frontend-developer_resume.pdf' download='carlos-borrega_frontend-developer_resume' className='text-xl'>
+              <a href='./assets/docs/carlos-borrega_frontend-developer_resume.pdf' download='carlos-borrega_frontend-developer_resume' className='text-xl xs:text-[17px]'>
                 Download my CV
               </a>
             </button>

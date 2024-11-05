@@ -16,7 +16,7 @@ const CodeBlock = ({ code, language }) => {
   }, [code, language]); // Re-run if code or language changes
 
   return (
-    <pre className='shadow-lg rounded-3xl'>
+    <pre className='shadow-lg xs:rounded-none lg:rounded-3xl'>
       <code ref={codeRef} className={`language-${language}`}>
         {code}
       </code>
