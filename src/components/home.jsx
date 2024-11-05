@@ -3,7 +3,7 @@ import '../index.css';
 import Icon from '../components/icon.jsx';
 
 const Home = () => (
-  <div className='flex flex-col items-center justify-center h-screen'>
+  <div className='flex flex-col items-center justify-center xs:h-[40rem] lg:h-screen'>
     <h1 className='text-myBlack font-bold my-4 lg:text-[7.4rem] md:text-7xl sm:text-6xl xs:text-[2.6rem]' data-aos='fade-up'>
       Hello, I'm Carlos
     </h1>
