@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import hljs from 'highlight.js';
-import 'highlight.js/styles/base16/sagelight.css';
+import 'highlight.js/styles/base16/summerfruit-light.css';
 
 import 'highlight.js/lib/languages/javascript';
 import 'highlight.js/lib/languages/typescript';

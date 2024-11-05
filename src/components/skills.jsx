@@ -47,7 +47,16 @@ const Skills = () => {
                 transition: 'transform 0.3s ease, opacity 0.3s ease',
               }}
             ></i>
-            <h4 className='mt-7 lg:text-xl md:text-lg xs:text-md text-myGrey font-semibold'>{skill.name}</h4>
+            <h4
+              className='mt-7 lg:text-xl md:text-lg xs:text-md text-myGrey font-semibold'
+              style={{
+                transform: getTransformStyle(hoveredSkill, index),
+                opacity: hoveredSkill !== null && hoveredSkill !== index ? 0.7 : 1,
+                transition: 'transform 0.3s ease, opacity 0.3s ease',
+              }}
+            >
+              {skill.name}
+            </h4>
           </div>
         ))}
         <div className='text-my text-center'>
@@ -63,7 +72,16 @@ const Skills = () => {
             onMouseEnter={() => setHoveredSkill(skills.length)}
             onMouseLeave={() => setHoveredSkill(null)}
           />
-          <h4 className='mt-8 lg:text-xl md:text-lg xs:text-md text-myGrey font-semibold'>TypeScript</h4>
+          <h4
+            className='mt-8 lg:text-xl md:text-lg xs:text-md text-myGrey font-semibold'
+            style={{
+              transform: getTransformStyle(hoveredSkill, skills.length),
+              opacity: hoveredSkill !== null && hoveredSkill !== skills.length ? 0.7 : 1,
+              transition: 'transform 0.3s ease, opacity 0.3s ease',
+            }}
+          >
+            TypeScript
+          </h4>
         </div>
       </div>
     </div>
@@ -71,3 +89,4 @@ const Skills = () => {
 };
 
 export default Skills;
+
