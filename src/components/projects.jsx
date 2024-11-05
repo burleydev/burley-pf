@@ -1,22 +1,22 @@
 import React from 'react';
 import '../index.css';
-import ToggleCode from './toggleCode.jsx';
-import VideoPlayer from './videoPlayer.jsx';
+import ToggleCode from './toggleCode';
+import VideoPlayer from './videoPlayer';
 import LandingPageVideo from '../assets/landing_page.mp4'
 import UserProfileVideo from '../assets/user_profile.mp4'
 import QuestionVideo from '../assets/question.mp4'
 import ForumVideo from '../assets/forum.mp4'
 import LoginImage from '../assets/login.png'
 import Slider from './slider.jsx';
-import LandingPageSnippet from './landingPageSnippet.jsx'
-import HomePageSnippet from './homepageSnippet.jsx'
-import QuestionSnippet from './questionSnippet.jsx'
-import LoginSnippet from './loginSnippet.jsx'
-import UserSnippet from './userSnippet.jsx'
+import LandingPageSnippet from '../snippets/landingPageSnippet'
+import HomePageSnippet from '../snippets/homepageSnippet'
+import QuestionSnippet from '../snippets/questionSnippet'
+import LoginSnippet from '../snippets/loginSnippet'
+import UserSnippet from '../snippets/userSnippet'
 
 const landingPage = [
   {
-    title: "Project Overview",
+    title: "Overview",
     description:
       "The PolicyCON landing page was developed as the main entry point for a platform that connects policy analysts with subscribers, helping them make informed decisions. The primary goal was to present information in a structured, user-friendly way while showcasing key sections like 'Popular Analyst Areas' and 'Featured Analysts.' Ensuring clarity and engagement was essential to enhance user interaction.",
   },
@@ -43,7 +43,7 @@ const landingPage = [
 ];
 const loginPage = [
   {
-    title: "Project Overview",
+    title: "Overview",
     description:
       "The PolicyCON login page serves as the main login interface for the forum. It’s designed as a straightforward and secure entry point where users can enter their email and password, along with agreeing to terms and conditions and accepting cookies. This page provides a simple, compliant user experience and integrates seamlessly with the wider PolicyCON platform.",
   },
@@ -70,7 +70,7 @@ const loginPage = [
 ];
 const forumHomepage = [
   {
-    title: "Project Overview",
+    title: "Overview",
     description:
       "The forum homepage is designed as a central hub for exploring trending topics, categories, and hashtags within the PolicyCON platform. Users can interact with a search bar to quickly find relevant content, while a tabbed layout allows easy navigation between different sections. This layout offers an intuitive and engaging experience, encouraging users to explore the forum’s content more deeply.",
   },
@@ -97,7 +97,7 @@ const forumHomepage = [
 ];
 const questionPage = [
   {
-    title: "Project Overview",
+    title: "Overview",
     description:
       "The 'Add Your Question' page on the PolicyCON forum allows users to submit their own questions, making it a key feature for user engagement and community building. The main page displays existing questions, and users can click on 'Add Your Question' to be redirected to a submission form where they can enter details like title, subheading, hashtags, and the body of the question. Users also have the option to attach media files, enriching the content and visual appeal of their posts.",
   },
@@ -124,7 +124,7 @@ const questionPage = [
 ];
 const userProfilePage = [
   {
-    title: "Project Overview",
+    title: "Overview",
     description:
       "The PolicyCON Forum User Profile page is designed to provide users with a detailed and dynamic profile experience. It features an edit mode where users can customise their profile by adding a profile picture, name, occupation, username, and pronouns. After saving changes, users are presented with a live profile view that includes a dynamic chart highlighting their most talked-about topics, along with a section displaying recent activity.",
   },
@@ -182,7 +182,7 @@ const Projects = () => (
     </div>
     <img src={LoginImage} alt='PolicyCON Forum Login Page' className=' w-[1080px] rounded-3xl shadow-lg' />
     <Slider slides={loginPage} />
-    {/* <ToggleCode SnippetComponent={LoginSnippet} /> */}
+    <ToggleCode SnippetComponent={LoginSnippet} />
 
     {/* Project 3 */}
     <div className='mb-6'>
@@ -195,7 +195,7 @@ const Projects = () => (
     </div>
     <VideoPlayer src={ForumVideo} />
     <Slider slides={forumHomepage} />
-    {/* <ToggleCode SnippetComponent={HomePageSnippet} /> */}
+    <ToggleCode SnippetComponent={HomePageSnippet} />
 
     {/* Project 4 */}
     <div className='mb-6'>
@@ -208,7 +208,7 @@ const Projects = () => (
     </div>
     <VideoPlayer src={QuestionVideo} />
     <Slider slides={questionPage} />
-    {/* <ToggleCode SnippetComponent={QuestionSnippet} /> */}
+    <ToggleCode SnippetComponent={QuestionSnippet} />
 
     {/* Project 5 */}
     <div className='mb-6'>
@@ -221,7 +221,7 @@ const Projects = () => (
     </div>
     <VideoPlayer src={UserProfileVideo} />
     <Slider slides={userProfilePage} />
-    {/* <ToggleCode SnippetComponent={UserSnippet} /> */}
+    <ToggleCode SnippetComponent={UserSnippet} />
 
   </div>
 );

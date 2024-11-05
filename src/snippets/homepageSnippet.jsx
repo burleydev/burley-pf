@@ -1,10 +1,12 @@
 import React from 'react';
 import classNames from 'classnames';
-import PropTypes from 'prop-types'; // Import PropTypes
-import CodeBlock from './codeblock'; // Ensure this import is correct
+import CodeBlock from '../components/codeblock'; // Ensure this import is correct
 
 const HomePageSnippet = ({ className }) => {
-  const codeString = `const greeting = 'Hello, Pikachu!';\nconsole.log(greeting);`; // Maintain formatting
+  const codeString = `
+    const greeting = 'Hello, you!';
+    console.log(greeting);
+  `;
 
   // Merge the passed className with additional classes
   const combinedClassNames = classNames(className, 'w-[100%]');
@@ -14,11 +16,6 @@ const HomePageSnippet = ({ className }) => {
       <CodeBlock code={codeString} language='javascript' />
     </div>
   );
-};
-
-// Add PropTypes for type checking
-HomePageSnippet.propTypes = {
-  className: PropTypes.string, // Ensure className is a string
 };
 
 export default HomePageSnippet;

@@ -17,7 +17,7 @@ const About = () => (
             <p key={idx} className='text-myBlack text-justify my-6 mx-5 xs:text-lg lg:my-10'>{text}</p>
           ))}
           <div className='flex justify-center mt-6 lg:justify-end lg:place-items-start lg:mr-5'>
-            <button className='download px-6 py-3 my-2 rounded-full text-white font-semibold'>
+            <button className='mt-4 p-4 text-white bg-myBlack rounded-lg font-bold hover:bg-myGrey'>
               <a href='./assets/docs/carlos-borrega_frontend-developer_resume.pdf' download='carlos-borrega_frontend-developer_resume' className='text-xl'>
                 Download my CV
               </a>

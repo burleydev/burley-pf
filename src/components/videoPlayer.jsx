@@ -6,11 +6,37 @@ const VideoPlayer = ({ src, width = "1080px", height = "608px" }) => {
   const [showControls, setShowControls] = useState(false);
 
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.play();
-      setIsPlaying(true);
+    const videoElement = videoRef.current;
+
+    // Set up Intersection Observer
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Play the video when it enters the viewport
+            videoElement.play();
+            setIsPlaying(true);
+          } else {
+            // Pause the video when it leaves the viewport
+            videoElement.pause();
+            setIsPlaying(false);
+          }
+        });
+      },
+      { threshold: 1 } // Trigger when 100% of the video is visible
+    );
+
+    if (videoElement) {
+      observer.observe(videoElement);
     }
-  }, []); // Autoplay when the component mounts
+
+    return () => {
+      // Clean up the observer when the component unmounts
+      if (videoElement) {
+        observer.unobserve(videoElement);
+      }
+    };
+  }, []);
 
   const togglePlay = () => {
     if (videoRef.current) {
@@ -33,11 +59,10 @@ const VideoPlayer = ({ src, width = "1080px", height = "608px" }) => {
         ref={videoRef}
         width={width}
         height={height}
-        autoPlay
         muted
         loop
         onClick={togglePlay} // Click on video to play/pause
-        controls={showControls}    // Controls visible on hover
+        controls={showControls} // Controls visible on hover
         style={{ cursor: 'pointer' }}
         className="rounded-3xl shadow-lg"
       >

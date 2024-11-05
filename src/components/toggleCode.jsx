@@ -12,7 +12,7 @@ const ToggleCode = ({ SnippetComponent }) => { // Accept SnippetComponent as a p
     <div className='code-snippet mb-32'>
       <button 
         onClick={toggleVisibility} 
-        className='mb-4 px-4 py-2 text-white bg-myBlack rounded-lg w-[12rem]' 
+        className='mb-4 px-4 py-[1rem] text-white bg-myBlack rounded-lg w-[12rem] font-bold' 
         aria-expanded={isVisible} // Accessibility enhancement
       >
         {isVisible ? 'Hide Code Snippet' : 'Show Code Snippet'}

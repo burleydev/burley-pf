@@ -1,8 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
-import CodeBlock from './codeblock'; // Ensure this import is correct
+import CodeBlock from '../components/codeblock'; // Ensure this import is correct
 
-const LoginSnippet = ({ className }) => {
+const QuestionSnippet = ({ className }) => {
   const codeString = `
     const greeting = 'Hello, you!';
     console.log(greeting);
@@ -18,4 +18,4 @@ const LoginSnippet = ({ className }) => {
   );
 };
 
-export default LoginSnippet;
+export default QuestionSnippet;
