@@ -154,16 +154,16 @@ const userProfilePage = [
 const Projects = () => (
   <div id='projects' className='flex flex-col items-center justify-center h-auto xs:mt-[5rem] lg:mt-0'>
 
-    <h3 className='mb-[8rem] font-bold text-myBlack lg:text-5xl md:text-6xl xs:text-3xl lg:mt-0 xs:mt-[9rem]'>
+    <h3 className='mb-[8rem] font-bold text-myBlack lg:text-5xl md:text-4xl xs:text-3xl lg:mt-0 xs:mt-[9rem]'>
       My Projects
     </h3>
 
     {/* Project 1 */}
     <div className='mb-6'>
-      <h2 className='text-myBlack font-black text-center pb-4 xs:text-xl lg:text-3xl'>
+      <h2 className='text-myBlack font-black text-center pb-4 xs:text-xl md:text-2xl lg:text-3xl'>
         PolicyCON Landing Page
       </h2>
-      <h3 className='text-myGrey text-center font-bold mb-10 xs:text-sm lg:text-lg'>
+      <h3 className='text-myGrey text-center font-bold mb-10 xs:text-sm sm:text-md md:text-lg lg:text-xl xs:px-10'>
         React | Vite | TypeScript | Tailwind CSS
       </h3>
     </div>
@@ -173,10 +173,10 @@ const Projects = () => (
 
     {/* Project 2 */}
     <div className='mb-6'>
-      <h2 className='text-myBlack font-black text-center pb-4 xs:text-xl lg:text-3xl'>
+      <h2 className='text-myBlack font-black text-center pb-4 xs:text-xl md:text-2xl lg:text-3xl'>
         PolicyCON Forum Login Page
       </h2>
-      <h3 className='text-myGrey text-center font-bold mb-10 xs:text-sm lg:text-lg xs:px-8'>
+      <h3 className='text-myGrey text-center font-bold mb-10 xs:text-sm sm:text-md md:text-lg lg:text-xl xs:px-10'>
         React | Vite | TypeScript | Tailwind CSS | React Router
       </h3>
     </div>
@@ -186,10 +186,10 @@ const Projects = () => (
 
     {/* Project 3 */}
     <div className='mb-6'>
-    <h2 className='text-myBlack font-black text-center pb-4 xs:text-xl lg:text-3xl'>
+    <h2 className='text-myBlack font-black text-center pb-4 xs:text-xl md:text-2xl lg:text-3xl'>
         PolicyCON Forum Homepage
       </h2>
-      <h3 className='text-myGrey text-center font-bold mb-10 xs:text-sm lg:text-lg xs:px-8'>
+      <h3 className='text-myGrey text-center font-bold mb-10 xs:text-sm sm:text-md md:text-lg lg:text-xl xs:px-10'>
         React | Vite | TypeScript | Tailwind CSS | React Router
       </h3>
     </div>
@@ -199,10 +199,10 @@ const Projects = () => (
 
     {/* Project 4 */}
     <div className='mb-6'>
-    <h2 className='text-myBlack font-black text-center pb-4 xs:text-xl lg:text-3xl xs:px-[5rem]'>
+    <h2 className='text-myBlack font-black text-center pb-4 xs:text-xl md:text-2xl lg:text-3xl xs:px-[5rem]'>
         PolicyCON Forum "Add Your Question"
       </h2>
-      <h3 className='text-myGrey text-center font-bold mb-10 xs:text-sm lg:text-lg xs:px-8'>
+      <h3 className='text-myGrey text-center font-bold mb-10 xs:text-sm sm:text-md md:text-lg lg:text-xl xs:px-10'>
         React | Vite | TypeScript | Tailwind CSS | React Router
       </h3>
     </div>
@@ -212,10 +212,10 @@ const Projects = () => (
 
     {/* Project 5 */}
     <div className='mb-6'>
-    <h2 className='text-myBlack font-black text-center pb-4 xs:text-xl lg:text-3xl'>
+    <h2 className='text-myBlack font-black text-center pb-4 xs:text-xl md:text-2xl lg:text-3xl'>
         PolicyCON Forum User Profile
       </h2>
-      <h3 className='text-myGrey text-center font-bold mb-10 xs:text-sm lg:text-lg xs:px-8'>
+      <h3 className='text-myGrey text-center font-bold mb-10 xs:text-sm sm:text-md md:text-lg lg:text-xl xs:px-10'>
         React | Vite | TypeScript | Tailwind CSS | React Router | Recharts
       </h3>
     </div>

@@ -27,7 +27,7 @@ const Slider = ({ slides }) => {
             <h3 className="text-center text-myBlack font-bold xs:text-xl lg:text-2xl">
               {slide.title}
             </h3>
-            <p className="text-myBlack leading-8 xs:p-[2rem] lg:p-[4rem] text-justify xs:text-sm xs:leading-7">
+            <p className="text-myBlack leading-8 xs:p-[2rem] lg:p-[4rem] text-justify xs:text-sm lg:text-lg xs:leading-7 lg:leading-8">
               {slide.description}
             </p>
           </div>
