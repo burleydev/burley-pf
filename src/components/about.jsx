@@ -1,6 +1,7 @@
 import React from 'react';
 import '../index.css';
 import Profile from '../assets/profile.png';
+import Resume from '../assets/docs/carlos-borrega_frontend-developer_resume.pdf'
 
 const About = () => (
   <div id='about' className='h-screen xs:h-auto'>
@@ -18,7 +19,7 @@ const About = () => (
           ))}
           <div className='flex justify-center mt-6 lg:justify-end lg:place-items-start lg:mr-5'>
             <button className='mt-4 p-4 text-white bg-myBlack rounded-lg font-bold hover:bg-myGrey'>
-              <a href='./assets/docs/carlos-borrega_frontend-developer_resume.pdf' download='carlos-borrega_frontend-developer_resume' className='text-xl xs:text-[17px]'>
+              <a href={Resume} download='carlos-borrega_frontend-developer_resume' className='text-xl xs:text-[17px]'>
                 Download my CV
               </a>
             </button>
