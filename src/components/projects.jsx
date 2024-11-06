@@ -14,6 +14,8 @@ import QuestionSnippet from '../snippets/questionSnippet'
 import LoginSnippet from '../snippets/loginSnippet'
 import UserSnippet from '../snippets/userSnippet'
 
+import LoginMobile from '../assets/login-mobile.png'
+
 const landingPage = [
   {
     title: "Overview",
@@ -167,10 +169,16 @@ const Projects = () => (
         React | Vite | TypeScript | Tailwind CSS
       </h3>
     </div>
+    <div className='flex flex-col'>
     <VideoPlayer src={LandingPageVideo} />
+    <a href=''
+      className='xs:font-bold italic xs:text-myGrey xs:mt-4 text-right'>
+        Show mobile version
+      </a>
     <Slider slides={landingPage}>
       <ToggleCode SnippetComponent={LandingPageSnippet} />
     </Slider>
+    </div>
 
     {/* Project 2 */}
     <div className='mb-6'>
@@ -181,10 +189,16 @@ const Projects = () => (
         React | Vite | TypeScript | Tailwind CSS | React Router
       </h3>
     </div>
+    <div className='flex flex-col'>
     <img src={LoginImage} alt='PolicyCON Forum Login Page' className=' w-[1008px] shadow-lg xs:rounded-none lg:rounded-3xl ' />
+    <a href={LoginMobile}
+      className='xs:font-bold italic xs:text-myGrey xs:mt-4 text-right'>
+        Show mobile version
+      </a>
     <Slider slides={loginPage}>
       <ToggleCode SnippetComponent={LoginSnippet} />
     </Slider>
+    </div>
 
     {/* Project 3 */}
     <div className='mb-6'>
