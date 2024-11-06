@@ -14,8 +14,13 @@ import QuestionSnippet from '../snippets/questionSnippet'
 import LoginSnippet from '../snippets/loginSnippet'
 import UserSnippet from '../snippets/userSnippet'
 
-import Modal from './modal'
+import ModalImg from './modalImg.jsx'
 import LoginMobile from '../assets/login-mobile.png'
+
+import ModalVid from './modalVid.jsx'
+import ForumMobile from '../assets/forum-mobile.mp4'
+import QuestionMobile from '../assets/question-mobile.mp4'
+import UserMobile from '../assets/user_profile-mobile.mp4'
 
 const landingPage = [
   {
@@ -33,11 +38,11 @@ const landingPage = [
     description:
       "Development was highly collaborative. I worked closely with the frontend team, providing design feedback and iterating on the visuals to improve clarity and usability. We followed Agile methodology throughout the process to ensure continuous improvements and quick issue resolution. Git and GitHub were used for version control, with frequent code pushes and peer reviews to maintain high-quality code and minimize bugs.",
   },
-  {
-    title: "Mobile Responsiveness",
-    description:
-      "I focused on making the landing page fully responsive, carefully adapting the layout to work seamlessly on mobile and tablet screen sizes. This process involved optimising each element to maintain a smooth, intuitive experience regardless of the device. My goal was to ensure that users could interact effortlessly with the page, whether they were viewing it on a large desktop monitor or a smaller mobile screen, preserving both functionality and visual appeal across all platforms.",
-  },
+  // {
+  //   title: "Mobile Responsiveness",
+  //   description:
+  //     "I focused on making the landing page fully responsive, carefully adapting the layout to work seamlessly on mobile and tablet screen sizes. This process involved optimising each element to maintain a smooth, intuitive experience regardless of the device. My goal was to ensure that users could interact effortlessly with the page, whether they were viewing it on a large desktop monitor or a smaller mobile screen, preserving both functionality and visual appeal across all platforms.",
+  // },
   {
     title: "Outcomes & Learnings",
     description:
@@ -172,10 +177,6 @@ const Projects = () => (
     </div>
     <div className='flex flex-col'>
       <VideoPlayer src={LandingPageVideo} />
-      <a href=''
-        className='xs:font-bold italic xs:text-myGrey xs:mt-4 text-right'>
-        Show mobile version
-      </a>
       <Slider slides={landingPage}>
         <ToggleCode SnippetComponent={LandingPageSnippet} />
       </Slider>
@@ -192,7 +193,7 @@ const Projects = () => (
     </div>
     <div className='flex flex-col'>
       <img src={LoginImage} alt='PolicyCON Forum Login Page' className=' w-[1008px] shadow-lg xs:rounded-none lg:rounded-3xl ' />
-      <Modal imageSrc={LoginMobile} />
+      <ModalImg imageSrc={LoginMobile} />
       <Slider slides={loginPage}>
         <ToggleCode SnippetComponent={LoginSnippet} />
       </Slider>
@@ -207,10 +208,13 @@ const Projects = () => (
         React | Vite | TypeScript | Tailwind CSS | React Router
       </h3>
     </div>
-    <VideoPlayer src={ForumVideo} />
-    <Slider slides={forumHomepage}>
-      <ToggleCode SnippetComponent={HomePageSnippet} />
-    </Slider>
+    <div className='flex flex-col'>
+      <VideoPlayer src={ForumVideo} />
+      <ModalVid videoSrc={ForumMobile} />
+      <Slider slides={forumHomepage}>
+        <ToggleCode SnippetComponent={HomePageSnippet} />
+      </Slider>
+    </div>
 
     {/* Project 4 */}
     <div className='mb-6'>
@@ -221,10 +225,13 @@ const Projects = () => (
         React | Vite | TypeScript | Tailwind CSS | React Router
       </h3>
     </div>
-    <VideoPlayer src={QuestionVideo} />
-    <Slider slides={questionPage}>
-      <ToggleCode SnippetComponent={QuestionSnippet} />
-    </Slider>
+    <div className='flex flex-col'>
+      <VideoPlayer src={QuestionVideo} />
+      <ModalVid videoSrc={QuestionMobile} />
+      <Slider slides={questionPage}>
+        <ToggleCode SnippetComponent={QuestionSnippet} />
+      </Slider>
+    </div>
 
     {/* Project 5 */}
     <div className='mb-6'>
@@ -235,10 +242,13 @@ const Projects = () => (
         React | Vite | TypeScript | Tailwind CSS | React Router | Recharts
       </h3>
     </div>
-    <VideoPlayer src={UserProfileVideo} />
-    <Slider slides={userProfilePage}>
-      <ToggleCode SnippetComponent={UserSnippet} />
-    </Slider>
+    <div className='flex flex-col'>
+      <VideoPlayer src={UserProfileVideo} />
+      <ModalVid videoSrc={UserMobile} />
+      <Slider slides={userProfilePage}>
+        <ToggleCode SnippetComponent={UserSnippet} />
+      </Slider>
+    </div>
 
   </div>
 );
