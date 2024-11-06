@@ -180,7 +180,7 @@ const Projects = () => (
         React | Vite | TypeScript | Tailwind CSS | React Router
       </h3>
     </div>
-    <img src={LoginImage} alt='PolicyCON Forum Login Page' className=' w-[1080px] shadow-lg xs:rounded-none lg:rounded-3xl ' />
+    <img src={LoginImage} alt='PolicyCON Forum Login Page' className=' w-[1008px] shadow-lg xs:rounded-none lg:rounded-3xl ' />
     <Slider slides={loginPage} />
     <ToggleCode SnippetComponent={LoginSnippet} />
 

@@ -33,8 +33,8 @@ const Skills = () => {
   const [hoveredSkill, setHoveredSkill] = useState(null);
 
   return (
-    <div id='skills' className='flex flex-col items-center justify-center h-screen xs:mt-[5rem] lg:mt-0'>
-    <div className='bg-transparent w-[90%] h-[800px] absolute top-[130rem] z-10 lg:hidden'></div>
+    <div id='skills' className='flex flex-col items-center justify-center h-screen xs:mt-[5rem] lg:mt-0 relative'>
+    <div className='bg-red-500 opacity-20 w-full h-[900px] absolute top-0 z-10 lg:hidden'></div>
       <h3 className='mb-[8rem] font-bold text-myBlack lg:text-5xl md:text-4xl xs:text-3xl lg:mt-0 xs:mt-[9rem] '>My Skills</h3>
       <div className='grid gap-x-[5rem] gap-y-[3rem] lg:grid-cols-4 xs:grid-cols-2' data-aos='fade-up'>
         {skills.map((skill, index) => (

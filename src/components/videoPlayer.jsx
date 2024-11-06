@@ -51,7 +51,7 @@ const VideoPlayer = ({ src, width = "1080px" }) => {
 
   return (
     <div
-      className="w-full sm:w-auto"
+      className="w-full sm:w-auto lg:w-[63rem]"
       style={{ maxWidth: width}}
       onMouseEnter={() => setShowControls(true)}
       onMouseLeave={() => setShowControls(false)}
