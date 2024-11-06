@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Slider = ({ slides }) => {
+const Slider = ({ slides, children }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const nextSlide = () => {
@@ -33,6 +33,8 @@ const Slider = ({ slides }) => {
           </div>
         ))}
       </div>
+
+      {/* Navigation buttons */}
       <button
         className="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 bg-transparent rounded-full hover:bg-transparent"
         onClick={prevSlide}
@@ -45,8 +47,12 @@ const Slider = ({ slides }) => {
       >
         &#10095;
       </button>
+
+      {/* Render ToggleCode or any other children */}
+      {children}
     </div>
   );
 };
 
 export default Slider;
+

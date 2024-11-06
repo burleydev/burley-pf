@@ -168,12 +168,13 @@ const Projects = () => (
       </h3>
     </div>
     <VideoPlayer src={LandingPageVideo} />
-    <Slider slides={landingPage} />
-    <ToggleCode SnippetComponent={LandingPageSnippet} />
+    <Slider slides={landingPage}>
+      <ToggleCode SnippetComponent={LandingPageSnippet} />
+    </Slider>
 
     {/* Project 2 */}
     <div className='mb-6'>
-      <h2 className='text-myBlack font-black text-center pb-4 xs:text-xl md:text-2xl lg:text-3xl'>
+      <h2 className='text-myBlack font-black text-center pb-4 xs:text-xl md:text-2xl lg:text-3xl mt-32'>
         PolicyCON Forum Login Page
       </h2>
       <h3 className='text-myGrey text-center font-bold mb-10 xs:text-sm sm:text-md md:text-lg lg:text-xl xs:px-0'>
@@ -181,12 +182,13 @@ const Projects = () => (
       </h3>
     </div>
     <img src={LoginImage} alt='PolicyCON Forum Login Page' className=' w-[1008px] shadow-lg xs:rounded-none lg:rounded-3xl ' />
-    <Slider slides={loginPage} />
-    <ToggleCode SnippetComponent={LoginSnippet} />
+    <Slider slides={loginPage}>
+      <ToggleCode SnippetComponent={LoginSnippet} />
+    </Slider>
 
     {/* Project 3 */}
     <div className='mb-6'>
-    <h2 className='text-myBlack font-black text-center pb-4 xs:text-xl md:text-2xl lg:text-3xl'>
+      <h2 className='text-myBlack font-black text-center pb-4 xs:text-xl md:text-2xl lg:text-3xl mt-32'>
         PolicyCON Forum Homepage
       </h2>
       <h3 className='text-myGrey text-center font-bold mb-10 xs:text-sm sm:text-md md:text-lg lg:text-xl xs:px-10'>
@@ -194,12 +196,13 @@ const Projects = () => (
       </h3>
     </div>
     <VideoPlayer src={ForumVideo} />
-    <Slider slides={forumHomepage} />
-    <ToggleCode SnippetComponent={HomePageSnippet} />
+    <Slider slides={forumHomepage}>
+      <ToggleCode SnippetComponent={HomePageSnippet} />
+    </Slider>
 
     {/* Project 4 */}
     <div className='mb-6'>
-    <h2 className='text-myBlack font-black text-center pb-4 xs:text-xl md:text-2xl lg:text-3xl xs:px-[5rem]'>
+      <h2 className='text-myBlack font-black text-center pb-4 xs:text-xl md:text-2xl lg:text-3xl xs:px-[5rem] mt-32'>
         PolicyCON Forum "Add Your Question"
       </h2>
       <h3 className='text-myGrey text-center font-bold mb-10 xs:text-sm sm:text-md md:text-lg lg:text-xl xs:px-10'>
@@ -207,12 +210,13 @@ const Projects = () => (
       </h3>
     </div>
     <VideoPlayer src={QuestionVideo} />
-    <Slider slides={questionPage} />
-    <ToggleCode SnippetComponent={QuestionSnippet} />
+    <Slider slides={questionPage}>
+      <ToggleCode SnippetComponent={QuestionSnippet} />
+    </Slider>
 
     {/* Project 5 */}
     <div className='mb-6'>
-    <h2 className='text-myBlack font-black text-center pb-4 xs:text-xl md:text-2xl lg:text-3xl'>
+      <h2 className='text-myBlack font-black text-center pb-4 xs:text-xl md:text-2xl lg:text-3xl mt-32'>
         PolicyCON Forum User Profile
       </h2>
       <h3 className='text-myGrey text-center font-bold mb-10 xs:text-sm sm:text-md md:text-lg lg:text-xl xs:px-10'>
@@ -220,8 +224,9 @@ const Projects = () => (
       </h3>
     </div>
     <VideoPlayer src={UserProfileVideo} />
-    <Slider slides={userProfilePage} />
-    <ToggleCode SnippetComponent={UserSnippet} />
+    <Slider slides={userProfilePage}>
+      <ToggleCode SnippetComponent={UserSnippet} />
+    </Slider>
 
   </div>
 );

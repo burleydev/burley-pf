@@ -9,14 +9,16 @@ const ToggleCode = ({ SnippetComponent }) => { // Accept SnippetComponent as a p
   };
 
   return (
-    <div className='code-snippet mb-32'>
-      <button 
-        onClick={toggleVisibility} 
-        className='mb-4 px-4 py-[1rem] text-white bg-myBlack rounded-lg lg:w-[12rem] font-bold xs:mt-8' 
-        aria-expanded={isVisible} // Accessibility enhancement
-      >
-        {isVisible ? 'Hide Code Snippet' : 'Show Code Snippet'}
-      </button>
+    <div>
+      <div className='flex justify-center'>
+        <button
+          onClick={toggleVisibility}
+          className='px-4 py-[1rem] text-white bg-myBlack rounded-lg lg:w-[12rem] font-bold mb-10'
+          aria-expanded={isVisible} // Accessibility enhancement
+        >
+          {isVisible ? 'Hide Code Snippet' : 'Show Code Snippet'}
+        </button>
+      </div>
 
       {isVisible && SnippetComponent && ( // Render SnippetComponent if it exists
         <SnippetComponent className='additional-class w-screen' /> // Pass any necessary props
