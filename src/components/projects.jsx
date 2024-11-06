@@ -176,7 +176,7 @@ const Projects = () => (
       <h2 className='text-myBlack font-black text-center pb-4 xs:text-xl md:text-2xl lg:text-3xl'>
         PolicyCON Forum Login Page
       </h2>
-      <h3 className='text-myGrey text-center font-bold mb-10 xs:text-sm sm:text-md md:text-lg lg:text-xl xs:px-10'>
+      <h3 className='text-myGrey text-center font-bold mb-10 xs:text-sm sm:text-md md:text-lg lg:text-xl xs:px-0'>
         React | Vite | TypeScript | Tailwind CSS | React Router
       </h3>
     </div>
