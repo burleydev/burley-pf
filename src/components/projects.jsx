@@ -31,12 +31,12 @@ const landingPage = [
   {
     title: "Technologies Used",
     description:
-      "I built the PolicyCON landing page using React and TypeScript to create a robust and interactive interface. Tailwind CSS allowed me to design a clean, responsive layout that adapts smoothly across all devices. Starting in Figma, I planned a user-friendly layout that highlights clarity and engagement. For version control, I relied on Git and GitHub, ensuring efficient collaboration and seamless updates. Throughout the process, I focused on user-centered design, making sure each element contributed to an intuitive and enjoyable experience.",
+      "I built the PolicyCON landing page using React and TypeScript to create a robust and interactive interface. Starting in Figma, I planned a user-friendly layout that highlights clarity and engagement. For version control, I relied on Git and GitHub, ensuring efficient collaboration and seamless updates. Throughout the process, I focused on user-centered design, making sure each element contributed to an intuitive and enjoyable experience.",
   },
   {
     title: "Development Process",
     description:
-      "Development was highly collaborative. I worked closely with the frontend team, providing design feedback and iterating on the visuals to improve clarity and usability. We followed Agile methodology throughout the process to ensure continuous improvements and quick issue resolution. Git and GitHub were used for version control, with frequent code pushes and peer reviews to maintain high-quality code and minimize bugs.",
+      "Development was highly collaborative. I worked closely with the frontend team, providing design feedback and iterating on the visuals to improve clarity and usability. We followed Agile methodology throughout the process to ensure continuous improvements and quick issue resolution. Git and GitHub were used for version control, with frequent code pushes and peer reviews to maintain high-quality code and minimise bugs.",
   },
   // {
   //   title: "Mobile Responsiveness",
@@ -46,7 +46,7 @@ const landingPage = [
   {
     title: "Outcomes & Learnings",
     description:
-      "The project successfully met its goals of providing a structured, visually appealing landing page. The team was able to collaborate effectively using Agile practices, and the end product showcased a polished, responsive design. I gained valuable experience working with TypeScript and React, as well as improved my skills in design feedback and collaboration.",
+      "The project successfully met its goals of providing a structured, visually appealing landing page. The team was able to collaborate effectively using Agile practices, and the end product showcased a polished design. I gained valuable experience working with TypeScript and React, as well as improved my skills in design feedback and collaboration.",
   },
 ];
 const loginPage = [
@@ -63,7 +63,7 @@ const loginPage = [
   {
     title: "Development Process",
     description:
-      "The development of this login page focused on creating a simple, secure, and accessible form. I structured the form using React components, then added validation and error handling for the email and password fields. Users can tick two boxes to agree to terms and accept cookies, adding a layer of compliance to the form. I paid particular attention to making it responsive, with design adjustments to suit both desktop and mobile layouts.",
+      "The development of this login page focused on creating a simple, secure, and accessible form. I structured the form using React components, then added validation and error handling for the email and password fields. Users can tick two boxes to agree to terms and accept cookies, adding a layer of compliance to the form.",
   },
   {
     title: "Mobile Responsiveness",
