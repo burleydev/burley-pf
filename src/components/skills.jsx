@@ -48,7 +48,7 @@ const Skills = () => {
               className={`fa-brands ${skill.icon} icon lg:text-7xl md:text-6xl xs:text-5xl`}
               style={{
                 transform: hoveredSkill === index ? 'scale(1.2)' : getTransformStyle(hoveredSkill, index),
-                opacity: hoveredSkill !== null && hoveredSkill !== index ? 0.7 : 1,
+                // opacity: hoveredSkill !== null && hoveredSkill !== index ? 0.7 : 1,
                 transition: 'transform 0.3s ease, opacity 0.3s ease',
               }}
             ></i>
@@ -56,7 +56,7 @@ const Skills = () => {
               className='mt-7 lg:text-xl md:text-lg xs:text-md text-myGrey font-semibold'
               style={{
                 transform: getTransformStyle(hoveredSkill, index),
-                opacity: hoveredSkill !== null && hoveredSkill !== index ? 0.7 : 1,
+                // opacity: hoveredSkill !== null && hoveredSkill !== index ? 0.7 : 1,
                 transition: 'transform 0.3s ease, opacity 0.3s ease',
               }}
             >
@@ -71,7 +71,7 @@ const Skills = () => {
             className='typescript-icon mt-1 mx-auto lg:h-[4rem] lg:w-[4rem] md:h-[3.3rem] md:w-[3.3rem] xs:h-[2.5rem] xs:w-[2.5rem]'
             style={{
               transform: hoveredSkill === skills.length ? 'scale(1.2)' : getTransformStyle(hoveredSkill, skills.length),
-              opacity: hoveredSkill !== null && hoveredSkill !== skills.length ? 0.7 : 1,
+              // opacity: hoveredSkill !== null && hoveredSkill !== skills.length ? 0.7 : 1,
               transition: 'transform 0.3s ease, opacity 0.3s ease',
             }}
             onMouseEnter={() => setHoveredSkill(skills.length)}
@@ -81,7 +81,7 @@ const Skills = () => {
             className='mt-8 lg:text-xl md:text-lg xs:text-md text-myGrey font-semibold'
             style={{
               transform: getTransformStyle(hoveredSkill, skills.length),
-              opacity: hoveredSkill !== null && hoveredSkill !== skills.length ? 0.7 : 1,
+              // opacity: hoveredSkill !== null && hoveredSkill !== skills.length ? 0.7 : 1,
               transition: 'transform 0.3s ease, opacity 0.3s ease',
             }}
           >
