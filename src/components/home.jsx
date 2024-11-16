@@ -8,7 +8,7 @@ const Home = () => (
       Hello, I'm Carlos
     </h1>
     <h2 className='my-4 text-myGrey lg:text-3xl md:text-2xl xs:text-sm' data-aos='fade-up' data-aos-delay='600'>
-      I'm a UX/UI Designer and Frontend Engineer
+      I'm a UX/UI Designer and Frontend Developer
     </h2>
     {/* <Icon/> */}
   </div>
