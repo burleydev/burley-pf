@@ -1,6 +1,6 @@
 # My Portfolio
 
-Welcome to my portfolio! This is a personal project showcasing my skills as a **UX/UI Designer** and **Frontend Engineer**. It was built using **React** and **Vite** for fast development and a modern web experience.
+Welcome to my portfolio! This is a personal project showcasing my skills as a **UX/UI Designer** and **Frontend Developer**. It was built using **React** and **Vite** for fast development and a modern web experience.
 
 ## Table of Contents
 - [About Me](#about-me)
