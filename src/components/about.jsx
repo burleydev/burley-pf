@@ -12,8 +12,8 @@ const About = () => (
       <div className='description bg-white p-8 col-span-3 flex items-center xs:px-2 sm:px-8 shadow-lg'>
         <div className='w-full'>
           {[
-            'Hi, I’m Carlos, a UX/UI Designer and Frontend Developer with a strong foundation in web development. I hold a bootcamp certificate in Frontend Web Development and I have refined my skills at PolicyCON, a dynamic startup where I’ve contributed to various projects as part of the frontend team.',
-            'My expertise lies in React, though I’m always excited to learn new technologies, including Python, which I’ve been diving into recently. I pride myself on being efficient, clear in communication, and detail-oriented in planning. I’m constantly seeking opportunities to grow, and I thrive in the tech world as I work towards becoming a better programmer every day.'
+            'Hi, I’m Carlos, a UX/UI Designer and Frontend Developer with a strong foundation in web technologies. I hold a bootcamp certificate in Frontend Web Development and I have refined my skills at PolicyCON, a dynamic startup where I’ve contributed to various projects as part of the frontend team.',
+            'My expertise lies in React, though I’m always excited to learn new programming languages, including Python, which I’ve been diving into recently. I pride myself on being efficient, clear in communication, and detail-oriented in planning. I’m constantly seeking opportunities to grow, and I thrive in the tech world as I work towards becoming a better programmer every day.'
           ].map((text, idx) => (
             <p key={idx} className='text-myBlack text-justify my-6 mx-5 xs:text-sm xs:leading-7 lg:text-lg lg:my-10'>{text}</p>
           ))}

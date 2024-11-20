@@ -3,7 +3,7 @@ import '../index.css';
 
 const Contact = () => {
   const links = [
-    { href: 'mailto:c.borrega@proton.me', label: 'Email' },
+    { href: 'mailto:carlos@borrega.dev', label: 'Email' },
     { href: 'https://www.linkedin.com/in/carlosborrega/', label: 'LinkedIn' },
     { href: 'https://github.com/borregadev', label: 'GitHub' },
   ];
