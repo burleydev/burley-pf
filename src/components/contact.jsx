@@ -3,9 +3,9 @@ import '../index.css';
 
 const Contact = () => {
   const links = [
-    { href: 'mailto:cborrega0@gmail.com', label: 'Email' },
-    { href: 'https://www.linkedin.com/in/carlosborrega/', label: 'LinkedIn' },
-    { href: 'https://github.com/borregadev', label: 'GitHub' },
+    { href: 'mailto:charlesburley2@gmail.com', label: 'Email' },
+    { href: 'https://www.linkedin.com/in/charlesburleyldn/', label: 'LinkedIn' },
+    { href: 'https://github.com/burleydev', label: 'GitHub' },
   ];
 
   return (
